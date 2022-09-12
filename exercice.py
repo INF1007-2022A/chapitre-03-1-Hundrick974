@@ -13,7 +13,14 @@ def square(a: float) -> float:
 
 
 def average(a: float, b: float, c: float) -> float:
-    return 0.0
+    #moyenne = (a + b + c) / 3
+    somme = 0
+    compteur = 0
+    while compteur < 3:
+        nombre = float(input())
+        somme += nombre
+        moyenne = somme / 3 
+    return moyenne
 
 
 def to_radians(angle_degs: float, angle_mins: float, angle_secs: float) -> float:
